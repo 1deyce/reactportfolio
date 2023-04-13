@@ -32,13 +32,67 @@ const Hero = () => {
                             className='flex items-center gap-6 mt-7'
                         >
                             <a href="#contact">
-                                <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300'>
+                                <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
                                     <i class="ri-mail-line"></i> Hire me
                                 </button>
                             </a>
-                            <a href="#portfolio">See portfolio
+                            <a 
+                                href="#portfolio" 
+                                className='text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor'
+                            >
+                                See portfolio
                             </a>
                         </div>
+
+                        <p 
+                            data-aos='fade-left'
+                            data-aos-duration='1500'
+                            className='flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'
+                        >
+                            <span>
+                                <i class="ri-apps-2-line"></i>
+                            </span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non tempora, laboriosam quaerat quae maxime! Distinctio nam eveniet sapiente, voluptatum voluptate est veniam a vel libero quod minima provident pariatur!
+                        </p>
+                
+                <div className="flex items-center gap-9 mt-14">
+                    <span className='text-smallTextColor text-[15px] font-[600]'>
+                        Follow me:
+                    </span>
+                    <span>
+                        <a 
+                            href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/" 
+                            className='text-smallTextColor text-[15px] font-[600]'
+                        >
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a 
+                            href="https://github.com/1deyce" 
+                            className='text-smallTextColor text-[15px] font-[600]'
+                        >
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a 
+                            href="#linkedin" 
+                            className='text-smallTextColor text-[15px] font-[600]'
+                        >
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a 
+                            href="#linkedin" 
+                            className='text-smallTextColor text-[15px] font-[600]'
+                        >
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </span>
+                </div>
+
                     </div>
                     {/* ========== hero left end ========== */}
                 </div>
