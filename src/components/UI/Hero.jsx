@@ -103,7 +103,7 @@ const Hero = () => {
                             </h2>
                             <h4 className='text-headingColor font-[600] text-[18px]'
                             >
-                                Years of experience
+                                Years of Experience
                             </h4>
                         </div>
                         <div className='mb-10'>
@@ -112,7 +112,7 @@ const Hero = () => {
                             </h2>
                             <h4 className='text-headingColor font-[600] text-[18px]'
                             >
-                                Success rate
+                                Success Rate
                             </h4>
                         </div>
                         <div className='mb-10'>
@@ -121,7 +121,7 @@ const Hero = () => {
                             </h2>
                             <h4 className='text-headingColor font-[600] text-[18px]'
                             >
-                                Happy clients
+                                Happy Clients
                             </h4>
                         </div>
                         <div className='mb-10'>
@@ -130,7 +130,7 @@ const Hero = () => {
                             </h2>
                             <h4 className='text-headingColor font-[600] text-[18px]'
                             >
-                                Projects completed
+                                Projects Completed
                             </h4>
                         </div>
 
