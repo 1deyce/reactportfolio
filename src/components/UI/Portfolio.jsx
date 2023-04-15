@@ -15,10 +15,10 @@ const Portfolio = () => {
                     All
                 </button>
                 <button className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
-                    All
+                    Web Design
                 </button>
                 <button className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
-                    All
+                    UX Design
                 </button>
 
             </div>
