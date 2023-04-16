@@ -21,11 +21,8 @@ const Portfolio = () => {
                 <button className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
                     UX Design
                 </button>
-
             </div>
-
             </div>
-
             <div className="flex items-center gap-4 flex-wrap mt-12">
                 {data?.map((portfolio,index) => (
                     <div 
