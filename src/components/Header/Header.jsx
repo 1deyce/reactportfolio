@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-    <header className='w-full h-[80px] leading-[80px] flex items-center'>
+    <header className='w-full h-[80px] leading-[80px] flex items-center bg-[#12141e]'>
         <div className="container">
             <div className='flex items-center justify-between'>
                 {/* =========== logo =========== */}
@@ -12,8 +12,10 @@ const Header = () => {
                     </span>
 
                     <div className='leading-[20px]'>
-                        <h2 className='text-xl text-smallTextColor font-[700]'>Keenan</h2>
-                        <p className='text-smallTextColor text-[14px] font-[500]'>
+                        <h2 className='text-xl text-white font-[700]'>
+                            Keenan
+                        </h2>
+                        <p className='text-white text-[14px] font-[500]'>
                             Personal
                         </p>
                     </div>
@@ -23,17 +25,17 @@ const Header = () => {
                 {/* =========== menu start =========== */}
                 <div className='menu'>
                     <ul className='flex items-center gap-10'>
-                        <li><a className='text-smallTextColor font-[600]' href="#about">About</a></li>
-                        <li><a className='text-smallTextColor font-[600]' href="#services">Services</a></li>
-                        <li><a className='text-smallTextColor font-[600]' href="#portfolio">Portfolio</a></li>
-                        <li><a className='text-smallTextColor font-[600]' href="#contact">Contact</a></li>
+                        <li><a className='text-white font-[600]' href="#about">About</a></li>
+                        <li><a className='text-white font-[600]' href="#services">Services</a></li>
+                        <li><a className='text-white font-[600]' href="#portfolio">Portfolio</a></li>
+                        <li><a className='text-white font-[600]' href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 {/* =========== menu end =========== */}
 
                 {/* =========== menu right =========== */}
                 <div className='flex items-center gap-4'>
-                    <button className='flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300'>
+                    <button className='flex items-center gap-2 text-white font-[600] border border-solid border-white py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-primaryColor hover:text-white hover:font-[500] ease-in duration-300'>
                         <i class="ri-send-plane-line"></i> Let's Talk
                     </button>
 
