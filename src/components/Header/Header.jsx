@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const Header = () => {
+
+    const headerRef = useRef(null)
+
+    const stickyHeaderFunc = ()=>{
+        window.addEventListener('scroll', ()=>{
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+                headerRef.current.classList.add('sticky__header')
+            }else{
+                headerRef.current.classList.remove('sticky__header')
+            }
+        })
+    }
+
+    useEffect(()=>{
+        stickyHeaderFunc()
+
+        return window.removeEventListener('scroll', stickyHeaderFunc)
+    },[])
+
     return (
-    <header className='w-full h-[80px] leading-[80px] flex items-center bg-[#12141e]'>
+    <header 
+        ref={headerRef} 
+        className='w-full h-[80px] leading-[80px] flex items-center bg-[#12141e]'
+    >
         <div className="container">
             <div className='flex items-center justify-between'>
                 {/* =========== logo =========== */}
@@ -36,7 +58,7 @@ const Header = () => {
                 {/* =========== menu right =========== */}
                 <div className='flex items-center gap-4'>
                     <button className='flex items-center gap-2 text-white font-[600] border border-solid border-white py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-primaryColor hover:text-white hover:font-[500] ease-in duration-300'>
-                        <i class="ri-send-plane-line"></i> Let's Talk
+                        <i class="ri-send-plane-line"><a href="#contact"></a></i> Let's Talk
                     </button>
 
                     <span className='text-2xl text-smallTextColor md:hidden cursor-pointer'><i class="ri-menu-line"></i></span>
