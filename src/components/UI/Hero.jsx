@@ -52,7 +52,11 @@ const Hero = () => {
                             <span>
                                 <i class="ri-apps-2-line"></i>
                             </span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non tempora, laboriosam quaerat quae maxime! Distinctio nam eveniet sapiente, voluptatum voluptate est veniam a vel libero quod minima provident pariatur!
+                            I am a junior software developer and web developer with a passion for building efficient and user-friendly software solutions. My skills and experience span a variety of programming languages and technologies including front-end, back-end web, and mobile application development.
+                            <br></br><br></br>
+                            In addition to my technical skills, I am a strong communicator and collaborator. I believe that building strong relationships with clients and team members is key to the success of any project, and I am committed to open communication and transparency throughout the development process.
+                            <br></br><br></br>
+                            Please take some time to browse my portfolio and explore some of the projects I have worked on. Please don't hesitate to get in touch, I look forward to hearing from you and working together to build something great!
                         </p>
                 
                 <div className="flex items-center gap-9 mt-14">
@@ -90,7 +94,7 @@ const Hero = () => {
                     {/* ========== hero img ========== */}
                     <div className='basis-1/3 mt-10 sm:mt-0'>
                         <figure className='flex items-center justify-center'>
-                            <img src={heroImg} alt="" className='opacity-5'/>
+                            <img src={heroImg} alt="" className='opacity-5' />
                         </figure>
 
                     </div>
