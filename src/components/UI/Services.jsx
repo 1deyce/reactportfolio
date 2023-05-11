@@ -12,9 +12,9 @@ const Services = () => {
                     <h2 
                         className="text-headingColor font-[800] text-[2.4rem] mb-5"
                     >
-                        What do I help
+                        What I do
                     </h2>
-                    <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae asperiores hic in saepe aut culpa voluptate, provident, sit tenetur rerum! Doloribus dolore cum sapiente minus ex quibusdam, quidem laudantium?</p>
+                    <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">I create visually appealing, user-friendly websites that deliver an exceptional online presence for your business. Using the latest web technologies and frameworks, I can develop responsive websites that are optimized for speed, performance, and search engine visibility. From informational websites to e-commerce platforms, I can build a solution that helps you connect with your target audience and achieve your online goals. With Flask and Node.js, I can design and develop a scalable and efficient backend architecture for your app..</p>
                 </div>
                 <div className="flex flex-col justify-center sm:py-12">
                     <div className="w-full py-3 sm:max-w-xl sm:mx-auto sm:px-0">
@@ -32,7 +32,7 @@ const Services = () => {
                                             <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">Frontend Development</h3>
 
                                             <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt vel.
+                                            Using modern HTML, CSS, and JavaScript frameworks, I can transform your design concepts into interactive and intuitive interfaces that captivate users and enhance their interaction with your digital products.
                                             </p>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@ const Services = () => {
                                             <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">Backend Development</h3>
 
                                             <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt vel.  
+                                            With expertise in server-side programming languages, databases, and frameworks, I can build robust back-end systems to power your software applications and websites.  
                                             </p>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@ const Services = () => {
                                             <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">UI/UX Design</h3>
 
                                             <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt vel.
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@ const Services = () => {
                                             <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">App Development</h3>
 
                                             <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt vel.
+                                            Based on your requirements, I can provide valuable insights and consulting to refine your app concept, identify key features, and determine the optimal technology stack and platform for development.
                                             </p>
                                         </div>
                                     </div>

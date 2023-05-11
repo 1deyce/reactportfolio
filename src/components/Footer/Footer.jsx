@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='sm:flex items-center justify-between md:gap-8'>
                 <div className='w-full sm:w-1/2'>
                     <h2 className='text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]'>
-                        Do you want to make beautiful products?
+                        Do you want to make beautiful products ?
                     </h2>
                     <a href="#contact">
                         <button 
@@ -24,7 +24,7 @@ const Footer = () => {
 
                 <div className="w-full sm:w-1/2">
                     <p className='text-gray-300 leading-7 mt-4 sm:mt-0'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquid dolore dolores iste, atque, ducimus deserunt id iure repudiandae veritatis quisquam consequatur hic amet quam doloremque provident praesentium cum non!
+                    Feel free to reach out to me through the contact information provided. I look forward to connecting with you !
                     </p>
 
                     <div className='flex items-center gap-4 flex-wrap md:gap-8 mt-10'>
