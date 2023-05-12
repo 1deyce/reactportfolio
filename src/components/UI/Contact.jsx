@@ -6,8 +6,7 @@ const Contact = () => {
 
   const Result = () => {
     return (
-                        </iframe>
-      <p>Your message has been successfully sent, I'll be in touch soon.</p>
+      <p>Message sent! I'll be in touch soon.</p>
     );
   };
 
