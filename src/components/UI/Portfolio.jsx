@@ -36,6 +36,18 @@ const Portfolio = () => {
 
     },[selectTab])
 
+    useEffect(() => {
+        const body = document.querySelector('body');
+
+        if (showModal) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = 'auto';
+        }
+
+    }, [showModal]);
+    
+
     return (
         <section id="portfolio">
             <div className="container">
@@ -72,7 +84,7 @@ const Portfolio = () => {
                             </figure>
 
                             <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
-                                <div className="w-full h-full flex items-center justify-center">
+                                <div className="w-full h-full flex items-center justify-center" style={{ overflow: 'auto' }}>
                                     <button
                                         onClick={()=>showModalHandler(portfolio.id)} 
                                         className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
