@@ -6,7 +6,6 @@ const Footer = () => {
 
     return ( 
         <footer className='bg-[#12141e] pt-12'>
-
         {/* =========== footer top =========== */}
         <div className='container'>
             <div className='sm:flex items-center justify-between md:gap-8'>
@@ -65,10 +64,10 @@ const Footer = () => {
 
             <div>
                 <ul className='flex items-center justify-center gap-10 mt-10'>
-                    <li><a className='text-gray-400 font-[600]' href="#about">About</a></li>
-                    <li><a className='text-gray-400 font-[600]' href="#services">Services</a></li>
-                    <li><a className='text-gray-400 font-[600]' href="#portfolio">Portfolio</a></li>
-                    <li><a className='text-gray-400 font-[600]' href="#contact">Contact</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#about">About</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#services">Services</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#portfolio">Portfolio</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>

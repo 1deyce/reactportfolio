@@ -1,11 +1,36 @@
-
-import React from 'react';
-import heroImg from '../../assets/images/hero3.svg';
+import React, { useState, useEffect } from 'react';
+// import heroImg from '../../assets/images/hero3.svg';
 import CountUp from 'react-countup';
-
+import "../toggle.css";
 const Hero = () => {
+
+    const [theme, setTheme] = useState("null");
+
+    useEffect(() => {
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        };
+    }, [])
+
+    useEffect(() => {
+        if (theme === 'dark'){
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+        } else {
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+        }
+    }, [theme]);
+
+    const handleThemeSwitch = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
+
+
     return (
-        <section className='pt-0' id='about'>
+        <section className='bg-white dark:bg-black pt-0' id='about'>
             <div className='container pt-14'>
                 <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
                     {/* ========== hero left content ========== */}
@@ -13,14 +38,14 @@ const Hero = () => {
                         <h5 
                             data-aos='fade-right' 
                             data-aos-duration='1500' 
-                            className='text-headingColor font-[500] text-[20px]'
+                            className='text-headingColor dark:text-white font-[500] text-[20px]'
                         >
                             Hi,
                         </h5>
                         <h1 
                             data-aos='fade-up' 
                             data-aos-duration='1500'
-                            className='text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'
+                            className='text-headingColor dark:text-white font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'
                         >
                             I'm Keenan Deyce, <br />Developer
                         </h1>
@@ -32,13 +57,13 @@ const Hero = () => {
                             className='flex items-center gap-6 mt-7'
                         >
                             <a href="#contact">
-                                <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
+                                <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor hover:dark:bg-white hover:dark:text-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
                                     <i class="ri-mail-line"></i> Hire me
                                 </button>
                             </a>
                             <a 
                                 href="#portfolio" 
-                                className='text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor'
+                                className='text-smallTextColor dark:text-primaryColor font-[600] text-[16px] border-b border-solid border-smallTextColor dark:border-white hover:dark:text-primaryColor'
                             >
                                 See portfolio
                             </a>
@@ -47,7 +72,7 @@ const Hero = () => {
                         <p 
                             data-aos='fade-left'
                             data-aos-duration='1500'
-                            className='flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'
+                            className='flex gap-2 text-headingColor dark:text-white mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'
                         >
                             <span>
                                 <i class="ri-apps-2-line"></i>
@@ -60,13 +85,13 @@ const Hero = () => {
                         </p>
                 
                 <div className="flex items-center gap-9 mt-14">
-                    <span className='text-smallTextColor text-[15px] font-[600]'>
+                    <span className='text-smallTextColor dark:text-white text-[15px] font-[600]'>
                         Follow Me:
                     </span>
                     <span>
                         <a 
                             href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/" 
-                            className='text-smallTextColor text-[15px] font-[600]'
+                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
                         >
                             <i class="ri-linkedin-line"></i>
                         </a>
@@ -74,7 +99,7 @@ const Hero = () => {
                     <span>
                         <a 
                             href="https://github.com/1deyce" 
-                            className='text-smallTextColor text-[15px] font-[600]'
+                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
                         >
                             <i class="ri-github-fill"></i>
                         </a>
@@ -82,7 +107,7 @@ const Hero = () => {
                     <span>
                         <a 
                             href="https://www.instagram.com/1deycefr/" 
-                            className='text-smallTextColor text-[15px] font-[600]'
+                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
                         >
                             <i class="ri-instagram-line"></i>
                         </a>
@@ -91,48 +116,51 @@ const Hero = () => {
 
                     </div>
                     {/* ========== hero left end ========== */}
-                    {/* ========== hero img ========== */}
-                    <div className='basis-1/3 mt-10 sm:mt-0'>
-                        <figure className='flex items-center justify-center'>
-                            <img src={heroImg} alt="" className='opacity-5' />
-                        </figure>
-
+                    {/* ========== hero btn ========== */}
+                    <div className='basis-1/3 mt-10 sm:mt-0 justify-center text-center'>
+                        <div class="checkbox-wrapper-5">
+                            <div class="check">
+                                <input checked="" id="check-5" type="checkbox" onClick={handleThemeSwitch} />
+                                <label for="check-5" />
+                            </div>
+                        </div>
                     </div>
+
                     {/* ========== hero img end ========== */}
                     {/* ========== hero content right ========== */}
                     <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
                         <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[26px]'>
+                            <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
                                 <CountUp start={0} end={1} duration={1} />
                             </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'
+                            <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
                                 Years of Experience
                             </h4>
                         </div>
                         <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[26px]'>
+                            <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
                                 <CountUp start={0} end={100} duration={2} suffix='%' />
                             </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'
+                            <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
                                 Success Rate
                             </h4>
                         </div>
                         <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[26px]'>
+                            <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
                                 <CountUp start={0} end={2} duration={3} />
                             </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'
+                            <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
                                 Happy Clients
                             </h4>
                         </div>      
                         <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[26px]'>
+                            <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
                                 <CountUp start={0} end={2} duration={4} />
                             </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'
+                            <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
                                 Projects Completed
                             </h4>
