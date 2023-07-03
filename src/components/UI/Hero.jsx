@@ -113,14 +113,14 @@ const Hero = () => {
                                     <i class="ri-github-fill"></i>
                                 </a>
                             </span>
-                            <span>
+                            {/* <span>
                                 <a
                                     href="https://www.instagram.com/1deycefr/"
                                     className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
                                 >
                                     <i class="ri-instagram-line"></i>
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
 
                     </div>
