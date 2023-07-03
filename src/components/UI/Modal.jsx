@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import portfolios from '../../assets/data/portfolioData';
 
 const Modal = ({activeID, setShowModal}) => {
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = 'hidden';
 
-        const portfolio = portfolios.find(portfolio=> portfolio.id === activeID)
+        return () => {
+            body.style.overflow = 'auto';
+        };
+    }, []);
+
+    const handleModalClose = () => {
+        setShowModal(false);
+    };
+
+    const handleModalScroll = (e) => {
+        e.stopPropagation();
+    };
+    
+    const portfolio = portfolios.find(portfolio=> portfolio.id === activeID)
     return (
-        <div className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
-            <div className="w-11/12 md:max-w-[600px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white dark:bg-black rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
+        <div 
+            className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40"
+            onClick={handleModalClose}
+        >
+            <div 
+                className="w-11/12 md:max-w-[600px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white dark:bg-black rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5"
+                onClick={handleModalScroll}
+            >
                 <div>
                     <figure>
                         <img 
@@ -31,7 +53,7 @@ const Modal = ({activeID, setShowModal}) => {
                             Technologies:
                         </h4>
 
-                        {portfolio.technologies.map((item,index)=> (
+                        {portfolio.technologies.map((item,index) => (
                             <span 
                                 key={index} 
                                 className="bg-gray-200 py-1 px-2 rounded-[5px] text-[14px] leading-0"
@@ -49,7 +71,7 @@ const Modal = ({activeID, setShowModal}) => {
                 </div>
 
         <button 
-            onClick={()=>setShowModal(false)} 
+            onClick={handleModalClose} 
             className="w-[1.8rem] h-[1.8rem] bg-[white] absolute top-[1.7rem] right-[1.7rem] text-[25px] flex items-center justify-center rounded-[3px] leading-0 cursor-pointer"
         >
             &times;

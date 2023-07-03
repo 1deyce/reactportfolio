@@ -11,7 +11,7 @@ import Contact from "./components/UI/Contact";
 
 function App() {
   useEffect(() => {
-    document.title = "Portfolio | Keenan"
+    document.title = "Portfolio | 1deyce"
     Aos.init();
   }, []);
 
