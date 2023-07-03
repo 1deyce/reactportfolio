@@ -68,3 +68,8 @@ section {
     display: block;
   }
 }
+
+::selection {
+  background-color: #8873ef;
+  color: #fff;
+}

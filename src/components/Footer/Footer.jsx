@@ -10,13 +10,14 @@ const Footer = () => {
         <div className='container'>
             <div className='sm:flex items-center justify-between md:gap-8'>
                 <div className='w-full sm:w-1/2'>
-                    <h2 className='text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]'>
+                    <h2 className='text-[26px] leading-10 text-white dark:text-white font-[600] mb-5 md:text-[2rem]'>
                         Do you want to make beautiful products ?
                     </h2>
                     <a href="#contact">
                         <button 
-                            className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
-                                <i class="ri-mail-line"></i> Hire me
+                            className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor dark:hover:bg-white dark:hover:text-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'
+                        >
+                            <i class="ri-mail-line"></i> Hire me
                         </button>
                     </a>
                 </div>
@@ -50,24 +51,24 @@ const Footer = () => {
                             </a>
                         </span>
 
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
+                        {/* <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
                             <a 
                                 href="https://www.instagram.com/1deycefr/" 
                                 className='text-gray-300 font-[500] text-[18px]'
                             >
                                 <i class="ri-instagram-line"></i>
                             </a>
-                        </span>
+                        </span> */}
                     </div>
                 </div>
             </div>
 
             <div>
                 <ul className='flex items-center justify-center gap-10 mt-10'>
-                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#about">About</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#services">Services</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#portfolio">Portfolio</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-white' href="#contact">Contact</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#about">About</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#services">Services</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#portfolio">Portfolio</a></li>
+                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -95,7 +96,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className='text-gray-400 text-[14px]'>Copyright {year} developed by Keenan - All rights reserved.</p>
+                        <p className='text-gray-400 text-[14px]'>© {year} developed by Keenan - All rights reserved.</p>
                     </div>
 
                 </div>

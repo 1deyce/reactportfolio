@@ -7,7 +7,7 @@ const Hero = () => {
     const [theme, setTheme] = useState("null");
 
     useEffect(() => {
-        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setTheme('dark');
         } else {
             setTheme('light');
@@ -15,12 +15,12 @@ const Hero = () => {
     }, [])
 
     useEffect(() => {
-        if (theme === 'dark'){
-        document.documentElement.classList.add("dark");
-        document.documentElement.classList.remove("light");
+        if (theme === 'dark') {
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
         } else {
-        document.documentElement.classList.add("light");
-        document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
+            document.documentElement.classList.remove("dark");
         }
     }, [theme]);
 
@@ -35,22 +35,31 @@ const Hero = () => {
                 <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
                     {/* ========== hero left content ========== */}
                     <div className='w-full md:basis-1/2'>
-                        <h5 
-                            data-aos='fade-right' 
-                            data-aos-duration='1500' 
+                        <h5
+                            data-aos='fade-right'
+                            data-aos-duration='1500'
                             className='text-headingColor dark:text-white font-[500] text-[20px]'
                         >
                             Hi,
                         </h5>
-                        <h1 
-                            data-aos='fade-up' 
+                        <h1
+                            data-aos='fade-up'
                             data-aos-duration='1500'
                             className='text-headingColor dark:text-white font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'
                         >
                             I'm Keenan Deyce, <br />Developer
                         </h1>
 
-                        <div 
+                        <div className='basis-1/3 mt-10 sm:mt-0 justify-center text-center'>
+                            <div class="checkbox-wrapper-5">
+                                <div class="check">
+                                    <input checked="" id="check-5" type="checkbox" onClick={handleThemeSwitch} />
+                                    <label for="check-5" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
                             data-aos='fade-up'
                             data-aos-duration='1800'
                             data-aos-delay='200'
@@ -61,15 +70,15 @@ const Hero = () => {
                                     <i class="ri-mail-line"></i> Hire me
                                 </button>
                             </a>
-                            <a 
-                                href="#portfolio" 
+                            <a
+                                href="#portfolio"
                                 className='text-smallTextColor dark:text-primaryColor font-[600] text-[16px] border-b border-solid border-smallTextColor dark:border-white hover:dark:text-primaryColor'
                             >
                                 See portfolio
                             </a>
                         </div>
 
-                        <p 
+                        <p
                             data-aos='fade-left'
                             data-aos-duration='1500'
                             className='flex gap-2 text-headingColor dark:text-white mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'
@@ -83,48 +92,40 @@ const Hero = () => {
                             <br></br><br></br>
                             Please take some time to browse my portfolio and explore some of the projects I have worked on. Please don't hesitate to get in touch, I look forward to hearing from you and working together to build something great!
                         </p>
-                
-                <div className="flex items-center gap-9 mt-14">
-                    <span className='text-smallTextColor dark:text-white text-[15px] font-[600]'>
-                        Follow Me:
-                    </span>
-                    <span>
-                        <a 
-                            href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/" 
-                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
-                        >
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a 
-                            href="https://github.com/1deyce" 
-                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
-                        >
-                            <i class="ri-github-fill"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a 
-                            href="https://www.instagram.com/1deycefr/" 
-                            className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
-                        >
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                    </span>
-                </div>
+
+                        <div className="flex items-center gap-9 mt-14">
+                            <span className='text-smallTextColor dark:text-white text-[15px] font-[600]'>
+                                Follow Me:
+                            </span>
+                            <span>
+                                <a
+                                    href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/"
+                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                >
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a
+                                    href="https://github.com/1deyce"
+                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                >
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a
+                                    href="https://www.instagram.com/1deycefr/"
+                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                >
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </span>
+                        </div>
 
                     </div>
                     {/* ========== hero left end ========== */}
                     {/* ========== hero btn ========== */}
-                    <div className='basis-1/3 mt-10 sm:mt-0 justify-center text-center'>
-                        <div class="checkbox-wrapper-5">
-                            <div class="check">
-                                <input checked="" id="check-5" type="checkbox" onClick={handleThemeSwitch} />
-                                <label for="check-5" />
-                            </div>
-                        </div>
-                    </div>
 
                     {/* ========== hero img end ========== */}
                     {/* ========== hero content right ========== */}
@@ -155,7 +156,7 @@ const Hero = () => {
                             >
                                 Happy Clients
                             </h4>
-                        </div>      
+                        </div>
                         <div className='mb-10'>
                             <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
                                 <CountUp start={0} end={2} duration={4} />
@@ -165,7 +166,6 @@ const Hero = () => {
                                 Projects Completed
                             </h4>
                         </div>
-
                     </div>
                     {/* ========== hero content right end ========== */}
                 </div>

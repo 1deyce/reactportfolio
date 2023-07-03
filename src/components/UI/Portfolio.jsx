@@ -20,21 +20,21 @@ const Portfolio = () => {
     
     useEffect(() =>{
 
-        if(selectTab==='all'){
+        if (selectTab==='all') {
             setPortfolios(data)
         }
 
-        if(selectTab==='web-design'){
+        if (selectTab==='web-design') {
             const filteredData = data.filter(item=> item.category==='Web Design')
             setPortfolios(filteredData)
         }
 
-        if(selectTab==='ux-design'){
+        if (selectTab==='ux-design') {
             const filteredData = data.filter(item=> item.category==='Ux')
             setPortfolios(filteredData)
         }
 
-    },[selectTab])
+    }, [selectTab])
 
     useEffect(() => {
         const body = document.querySelector('body');
@@ -49,23 +49,26 @@ const Portfolio = () => {
     
 
     return (
-        <section id="portfolio">
+        <section id="portfolio" className="dark:bg-black">
             <div className="container">
                 <div className="flex items-center justify-between flex-wrap">
                     <div className="mb-7 sm:mb-0">
-                        <h3 className="text-headingColor text-[2rem] font-[700]">
+                        <h3 className="text-headingColor dark:text-white text-[2rem] font-[700]">
                             Projects
                         </h3>
                     </div>
 
                 <div className="flex gap-3">
-                    <button onClick={()=>setSelectTab('all')} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+                    <button onClick={()=>setSelectTab('all')} className="text-smallTextColor dark:text-primaryColor border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
+                    >
                         All
                     </button>
-                    <button onClick={()=>setSelectTab('web-design')} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+                    <button onClick={()=>setSelectTab('web-design')} className="text-smallTextColor dark:text-primaryColor border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
+                    >
                         Web Design
                     </button>
-                    <button onClick={()=>setSelectTab('ux-design')} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+                    <button onClick={()=>setSelectTab('ux-design')} className="text-smallTextColor dark:text-primaryColor border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
+                    >
                         Apps
                     </button>
                 </div>
@@ -101,8 +104,9 @@ const Portfolio = () => {
                     {nextItems < portfolios.length && data.length > 6 && ( 
                         <button 
                             onClick={loadMoreHandler}
-                            className="text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
-                        >Load More
+                            className="text-white bg-primaryColor hover:bg-smallTextColor dark:hover:bg-white dark:hover:text-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
+                        >
+                            Load More
                         </button>
                     )}
                 </div>
