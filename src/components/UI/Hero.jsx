@@ -90,7 +90,7 @@ const Hero = () => {
                             data-aos-duration='1500'
                             className='flex gap-2 text-headingColor dark:text-white mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'
                         >
-                            <span>
+                            <span className='dark:text-primaryColor'>
                                 <i class="ri-apps-2-line"></i>
                             </span>
                             I am a junior software developer and web developer with a passion for building efficient and user-friendly software solutions. My skills and experience span a variety of programming languages and technologies including front-end, back-end web, and mobile application development.
