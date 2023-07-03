@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
     const headerRef = useRef(null);
     const menuRef = useRef(null);
+    const isMobile = useMediaQuery({ maxWidth: 768 }); //adjust breakpoint as needed
 
     const stickyHeaderFunc = ()=>{
         window.addEventListener('scroll', ()=>{
@@ -61,7 +63,7 @@ const Header = () => {
                     {/* =========== logo end =========== */}
                     {/* =========== menu start =========== */}
                     <div className='menu' ref={menuRef} onClick={toggleMenu}>
-                        <ul className='flex items-center gap-10 dark:bg-primaryColor'>
+                        <ul className={`flex items-center gap-10 ${isMobile ? 'dark:bg-primaryColor' : ''}`}>
                             <li>
                                 <a onClick={handleClick} className='text-smallTextColor dark:text-white font-[600] hover:text-primaryColor hover:dark:text-primaryColor' href="#about">About</a>
                             </li>
@@ -77,7 +79,6 @@ const Header = () => {
                         </ul>
                     </div>
                     {/* =========== menu end =========== */}
-
                     {/* =========== menu right =========== */}
                     <div className='flex items-center gap-4'>
                         <a href="#contact">
