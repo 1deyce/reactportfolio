@@ -14,7 +14,7 @@ const portfolios = [
     title: "Finance Technology Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
+    technologies: ["React.js", "Tailwind css", "Node.js", "MongoDB"],
     siteUrl: "#",
   },
   {
