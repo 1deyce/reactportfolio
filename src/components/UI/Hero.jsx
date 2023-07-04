@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 // import heroImg from '../../assets/images/hero3.svg';
 import CountUp from 'react-countup';
 import "../toggle.css";
+import 'remixicon/fonts/remixicon.css';
+
+
 const Hero = () => {
 
     const [theme, setTheme] = useState("null");
@@ -106,7 +109,7 @@ const Hero = () => {
                             <span className='text-smallTextColor dark:text-white text-[15px] font-[600]'>
                                 Follow Me:
                             </span>
-                            <span>
+                            <span className='animate-bounce'>
                                 <a
                                     href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/"
                                     className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
@@ -114,10 +117,10 @@ const Hero = () => {
                                     <i class="ri-linkedin-line"></i>
                                 </a>
                             </span>
-                            <span>
+                            <span className='animate-bounce'>
                                 <a
                                     href="https://github.com/1deyce"
-                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600] animate-spin'
                                 >
                                     <i class="ri-github-fill"></i>
                                 </a>
