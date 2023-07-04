@@ -50,6 +50,7 @@ const Hero = () => {
                             I'm Keenan Deyce, <br />Developer
                         </h1>
 
+                        {/* ========== dark/light mode toggle start ========== */}
                         <label className="switch mt-5">
                             <span class="sun">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -65,7 +66,8 @@ const Hero = () => {
                             <input type="checkbox" class="input" onChange={handleThemeSwitch} />
                             <span class="slider"></span>
                         </label>
-
+                        {/* ========== dark/light mode toggle end ========== */}
+                        
                         <div
                             data-aos='fade-up'
                             data-aos-duration='1800'
@@ -157,7 +159,7 @@ const Hero = () => {
                         </div>
                         <div className='mb-10'>
                             <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
-                                <CountUp start={0} end={2} duration={3} />
+                                <CountUp start={0} end={1} duration={3} />
                             </h2>
                             <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
@@ -166,7 +168,7 @@ const Hero = () => {
                         </div>
                         <div className='mb-10'>
                             <h2 className='text-headingColor dark:text-primaryColor font-[700] text-[26px]'>
-                                <CountUp start={0} end={2} duration={4} />
+                                <CountUp start={0} end={1} duration={4} />
                             </h2>
                             <h4 className='text-headingColor dark:text-white font-[600] text-[18px]'
                             >
