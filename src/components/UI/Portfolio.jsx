@@ -54,7 +54,9 @@ const Portfolio = () => {
                 <div className="flex items-center justify-between flex-wrap">
                     <div className="mb-7 sm:mb-0">
                         <h3 className="text-headingColor dark:text-white text-[2rem] font-[700]">
-                            Projects
+                            <span className="border-b-2 border-solid border-smallTextColor dark:border-primaryColor">
+                                Projects
+                            </span>
                         </h3>
                     </div>
 

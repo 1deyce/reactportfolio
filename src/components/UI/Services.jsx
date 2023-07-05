@@ -9,10 +9,10 @@ const Services = () => {
         <section id="services" className="dark:bg-black">
             <div className="container lg:pt-5">
                 <div className="text-center">
-                    <h2 
-                        className="text-headingColor dark:text-white font-[800] text-[2.4rem] mb-5"
-                    >
-                        What I do
+                    <h2 className="text-headingColor dark:text-white font-[800] text-[2.4rem] mb-6">
+                        <span className="border-b-2 border-solid border-smallTextColor dark:border-primaryColor">
+                            What I do
+                        </span>
                     </h2>
                     <p className="lg:max-w-[600px] lg:mx-auto text-headingColor dark:text-white font-[500] text-[16px] leading-7">I create visually appealing, user-friendly websites that deliver an exceptional online presence for your business. Using the latest web technologies and frameworks, I can develop responsive websites that are optimized for speed, performance, and search engine visibility. From informational websites to e-commerce platforms, I can build a solution that helps you connect with your target audience and achieve your online goals. With Flask and Node.js, I can design and develop a scalable and efficient backend architecture for your app..</p>
                 </div>
