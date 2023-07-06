@@ -88,7 +88,7 @@ const Contact = () => {
                   type="text"
                   rows={3}
                   placeholder="Write your message"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white"
+                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white resize-none"
                   name="message" // Add a name attribute to the textarea
                 />
               </div>
