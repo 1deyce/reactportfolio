@@ -50,7 +50,7 @@ const Hero = () => {
                             data-aos-duration='1500'
                             className='text-headingColor dark:text-white font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'
                         >
-                            I'm Keenan Deyce, <br />Developer
+                            I'm Keenan Deyce, <br />Software Developer
                         </h1>
 
                         {/* ========== dark/light mode toggle start ========== */}
