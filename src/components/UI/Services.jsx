@@ -29,9 +29,9 @@ const Services = () => {
                                 <div className="flex justify-start w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pr-8">
                                         <div data-aos="fade-right" dat-aos-duration="1200" className="bg-white dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
-                                            <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl">Frontend Development</h3>
+                                            <h3 className="text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center">Frontend Development</h3>
 
-                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white dark:group-hover:text-white group-hover:font-[500] leading-7">
+                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white dark:group-hover:text-white group-hover:font-[500] leading-7 text-center">
                                             Using modern HTML, CSS, and JavaScript frameworks, I can transform your design concepts into interactive and intuitive interfaces that captivate users and enhance their interaction with your digital products.
                                             </p>
                                         </div>
@@ -53,12 +53,12 @@ const Services = () => {
                                 <div className="flex justify-end w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pl-8">
                                         <div data-aos="fade-left" dat-aos-duration="1300" data-aos-delay="50" className="bg-white dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
-                                            <h3 className="text-primaryColor dark:text-primaryColor font-[700] mb-3 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl"
+                                            <h3 className="text-primaryColor dark:text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center"
                                             >
                                                 Backend Development
                                             </h3>
 
-                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white group-hover:font-[500] leading-7">
+                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white group-hover:font-[500] leading-7 text-center">
                                             With expertise in server-side programming languages, databases, and frameworks, I can build robust back-end systems to power your software applications and websites.  
                                             </p>
                                         </div>
@@ -80,9 +80,9 @@ const Services = () => {
                                 <div className="flex justify-start w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pr-8">
                                         <div data-aos="fade-right" dat-aos-duration="1400" data-aos-delay="100" className="bg-white dark:bg-black p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-primaryColor cursor-pointer ease-in duration-150">
-                                            <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl">App Development</h3>
+                                            <h3 className="text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center">App Development</h3>
 
-                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white group-hover:font-[500] leading-7">
+                                            <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white group-hover:font-[500] leading-7 text-center">
                                             Based on your requirements, I can provide valuable insights and consulting to refine your app concept, identify key features, and determine the optimal technology stack and platform for development.
                                             </p>
                                         </div>
