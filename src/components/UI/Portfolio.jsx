@@ -30,7 +30,7 @@ const Portfolio = () => {
         }
 
         if (selectTab==='ux-design') {
-            const filteredData = data.filter(item=> item.category==='Ux')
+            const filteredData = data.filter(item=> item.category==='Apps')
             setPortfolios(filteredData)
         }
 
@@ -49,7 +49,7 @@ const Portfolio = () => {
     
 
     return (
-        <section id="portfolio" className="dark:bg-black">
+        <section id="portfolio" className="bg-[#ffd6ff] dark:bg-black">
             <div className="container">
                 <div className="flex items-center justify-between flex-wrap">
                     <div className="mb-7 sm:mb-0">

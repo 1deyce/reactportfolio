@@ -6,7 +6,7 @@ import appsImg from "../../assets/images/apps.png";
 
 const Services = () => {
     return (
-        <section id="services" className="dark:bg-black">
+        <section id="services" className="bg-[#ffd6ff] dark:bg-black">
             <div className="container lg:pt-5">
                 <div className="text-center">
                     <h2 className="text-headingColor dark:text-white font-[800] text-[2.4rem] mb-6">

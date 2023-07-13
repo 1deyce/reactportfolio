@@ -18,7 +18,7 @@ const Header = () => {
                 }
               }
         })
-    }
+    };
 
     useEffect(()=>{
         stickyHeaderFunc()
@@ -75,7 +75,7 @@ const Header = () => {
     return (
         <header 
             ref={headerRef}
-            className='w-full h-[80px] leading-[80px] flex items-center bg-white dark:bg-black'
+            className='w-full h-[80px] leading-[80px] flex items-center bg-[#ffd6ff] dark:bg-black'
         >
             <div className="container">
                 <div className='flex items-center justify-between'>
@@ -153,6 +153,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-)};
+    )
+};
 
 export default Header;

@@ -19,7 +19,11 @@ const Modal = ({activeID, setShowModal}) => {
         e.stopPropagation();
     };
     
-    const portfolio = portfolios.find(portfolio=> portfolio.id === activeID)
+    const portfolio = portfolios.find(portfolio=> portfolio.id === activeID);
+
+    if (!portfolio) {
+        return null; // or render a different component, show an error message, etc.
+    }
     return (
         <div 
             className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40"
