@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-[#ffd6ff] pb-16 dark:bg-black">
+    <section id="contact" className="bg-[#f7fff7] pb-16 dark:bg-black">
       <div className="container">
         <h2 className="text-headingColor dark:text-white font-[700] text-[2.5rem] mb-8">
           <span className="border-b-2 border-solid border-smallTextColor dark:border-primaryColor">
