@@ -132,7 +132,7 @@ const Hero = () => {
                             <span className='animate-bounce'>
                                 <a
                                     href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/"
-                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                    className='text-smallTextColor dark:text-primaryColor text-[20px] font-[600]'
                                 >
                                     <i class="ri-linkedin-line"></i>
                                 </a>
@@ -140,7 +140,7 @@ const Hero = () => {
                             <span className='animate-bounce'>
                                 <a
                                     href="https://github.com/1deyce"
-                                    className='text-smallTextColor dark:text-primaryColor text-[18px] font-[600]'
+                                    className='text-smallTextColor dark:text-primaryColor text-[20px] font-[600]'
                                 >
                                     <i class="ri-github-fill"></i>
                                 </a>
