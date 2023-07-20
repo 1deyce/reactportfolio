@@ -6,7 +6,7 @@ import appsImg from "../../assets/images/apps.png";
 
 const Services = () => {
     return (
-        <section id="services" className="bg-[#E8E9EB] dark:bg-black">
+        <section id="services" className="bg-white dark:bg-black">
             <div className="container lg:pt-5">
                 <div className="text-center">
                     <h2 className="text-headingColor dark:text-white font-[800] text-[2.4rem] mb-6">
@@ -28,7 +28,7 @@ const Services = () => {
 
                                 <div className="flex justify-start w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pr-8">
-                                        <div data-aos="fade-right" dat-aos-duration="1200" className="bg-[#E8E9EB] dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                                        <div data-aos="fade-right" dat-aos-duration="1200" className="bg-white dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                                             <h3 className="text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center">Frontend Development</h3>
 
                                             <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white dark:group-hover:text-white group-hover:font-[500] leading-7 text-center">
@@ -52,7 +52,7 @@ const Services = () => {
 
                                 <div className="flex justify-end w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pl-8">
-                                        <div data-aos="fade-left" dat-aos-duration="1300" data-aos-delay="50" className="bg-[#E8E9EB] dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                                        <div data-aos="fade-left" dat-aos-duration="1300" data-aos-delay="50" className="bg-white dark:bg-black hover:dark:bg-primaryColor p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                                             <h3 className="text-primaryColor dark:text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center"
                                             >
                                                 Backend Development
@@ -79,7 +79,7 @@ const Services = () => {
 
                                 <div className="flex justify-start w-full mx-auto items-center">
                                     <div className="w-full sm:w-1/2 sm:pr-8">
-                                        <div data-aos="fade-right" dat-aos-duration="1400" data-aos-delay="100" className="bg-[#E8E9EB] dark:bg-black p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                                        <div data-aos="fade-right" dat-aos-duration="1400" data-aos-delay="100" className="bg-white dark:bg-black p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-primaryColor cursor-pointer ease-in duration-150">
                                             <h3 className="text-primaryColor font-[700] mb-2 mt-1 group-hover:text-white dark:group-hover:text-black group-hover:font-[600] text-xl text-center">App Development</h3>
 
                                             <p className="text-[15px] text-smallTextColor dark:text-white group-hover:text-white group-hover:font-[500] leading-7 text-center">

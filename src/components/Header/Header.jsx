@@ -75,7 +75,7 @@ const Header = () => {
     return (
         <header 
             ref={headerRef}
-            className='w-full h-[80px] leading-[80px] flex items-center bg-[#E8E9EB] dark:bg-black'
+            className='w-full h-[80px] leading-[80px] flex items-center bg-white dark:bg-black'
         >
             <div className="container">
                 <div className='flex items-center justify-between'>

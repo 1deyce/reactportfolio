@@ -33,7 +33,7 @@ const Hero = () => {
     };
 
     return (
-        <section className='bg-[#e8e9eb] dark:bg-black pt-0' id='about'>
+        <section className='bg-white dark:bg-black pt-0' id='about'>
             <div className='container pt-14'>
                 <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
                     {/* ========== hero left content ========== */}

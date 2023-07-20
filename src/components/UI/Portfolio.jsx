@@ -49,7 +49,7 @@ const Portfolio = () => {
     
 
     return (
-        <section id="portfolio" className="bg-[#E8E9EB] dark:bg-black">
+        <section id="portfolio" className="bg-white dark:bg-black">
             <div className="container">
                 <div className="flex items-center justify-between flex-wrap">
                     <div className="mb-7 sm:mb-0">
